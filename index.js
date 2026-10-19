@@ -167,4 +167,162 @@ console.log("the \n l3");
 
 console.log(`Vegan: ${isVegan}, kids: ${numberOfKids}`);
 
+//-----task 8
+console.log(Number('42'));
+console.log(typeof Number('42'));
+
+console.log(String(123));
+console.log(typeof String(123));
+
+console.log(Number('12px'));//nan
+console.log(typeof Number('12px'));//number
+
+console.log(Number(true));// true --1
+console.log(Number(false));// false --0
+console.log(Number(null));// null --0
+console.log(Number(undefined));// undefined -> NaN
+console.log(Number(''));// '' -> 0
+
+console.log(String(true));
+console.log(String(null));
+console.log(String(undefined));
+
+const input = '25';
+
+console.log(input + 5);//255
+console.log(Number(input) + 5);//30
+
+console.log('5' + 1);//51
+console.log('5' - 1);//4
+console.log('5' * 2);//10
+console.log('10' / 2);//5
+
+//האופרטור + יכול לחבר מחרוזות, לעומת -, *, / שממירים מחרוזות מספריות למספרים לצורך החישוב.
+
+
+//-----task 9
+console.log('5' + 5);//55
+console.log('5' - 2);//3
+console.log('5' + true);//5true
+console.log(true + 1);//2
+console.log(typeof (5 + '5'));//string
+console.log(typeof null, typeof undefined);//object undefined
+let x;
+console.log(x, typeof x);//undefined undefined
+console.log(Number('abc'), typeof Number('abc'));//NaN number
+console.log(true === 'true');//false
+const n = 5;
+//n = 6;
+//console.log(n);//TypeError
+
+//-----task 10
+const Name = 'David';
+const Age = 25;
+const City = 'Jerusalem';
+const IsStudent = true;
+const LikesCoffee = false;
+
+console.log(`Name: ${Name}
+Age: ${Age}
+City: ${City}
+Student: ${IsStudent}
+Likes coffee: ${LikesCoffee}`);
+
+console.log(typeof Name);
+console.log(typeof Age);
+console.log(typeof City);
+console.log(typeof IsStudent);
+console.log(typeof LikesCoffee);
+
+
+/////
+const product1 = 'Book';
+const price1 = 30;
+const quantity1 = 2;
+
+const product2 = 'Pen';
+const price2 = 5;
+const quantity2 = 3;
+
+const product3 = 'Notebook';
+const price3 = 12;
+const quantity3 = 1;
+
+const total1 = price1 * quantity1;
+const total2 = price2 * quantity2;
+const total3 = price3 * quantity3;
+
+const total11 = total1 + total2 + total3;
+
+console.log(`
+products:
+${product1}: ${price1} x ${quantity1} = ${total1}
+${product2}: ${price2} x ${quantity2} = ${total2}
+${product3}: ${price3} x ${quantity3} = ${total3}
+Total: ${total11}
+`);
+
+///////
+const celsius = 25;
+const fahrenheit = celsius * 9 / 5 + 32;
+
+console.log(`${celsius}C = ${fahrenheit}F`);
+console.log(typeof fahrenheit);
+
+/////
+const ageInput = '30';
+const heightInput = '1.75';
+
+console.log(ageInput, typeof ageInput);
+console.log(heightInput, typeof heightInput);
+
+const age22 = Number(ageInput);
+const height = Number(heightInput);
+
+console.log(age22, typeof age22);
+console.log(height, typeof height);
+
+//////
+const value1 = 'Hello';
+const value2 = 42;
+const value3 = true;
+const value4 = undefined;
+const value5 = null;
+const value6 = 'JavaScript';
+const value7 = 3.14;
+const value8 = false;
+const value9 = 0;
+const value10 = '123';
+
+console.log(`Value: ${value1}, Type: ${typeof value1}`);
+console.log(`Value: ${value2}, Type: ${typeof value2}`);
+console.log(`Value: ${value3}, Type: ${typeof value3}`);
+console.log(`Value: ${value4}, Type: ${typeof value4}`);
+console.log(`Value: ${value5}, Type: ${typeof value5}`);
+console.log(`Value: ${value6}, Type: ${typeof value6}`);
+console.log(`Value: ${value7}, Type: ${typeof value7}`);
+console.log(`Value: ${value8}, Type: ${typeof value8}`);
+console.log(`Value: ${value9}, Type: ${typeof value9}`);
+console.log(`Value: ${value10}, Type: ${typeof value10}`);
+
+//בונוס
+console.log(0.1 + 0.2);//0.30000000000000004
+//לאחר בירור נראה כי זה מספר שאי אפשר להציג אותו בבינארית ולכן הוא מוצג כFloat
+
+
+console.log('b' + 'a' + +'a' + 'a');
+//  'b' + 'a' = 'ba'
+//  +'a' = NaN, כי האופרטור +  מנסה להמיר את 'a' למספר
+// 'ba' + NaN = 'baNaN'
+// 'baNaN' + 'a' = 'baNaNa'
+
+
+
+
+
+
+
+
+
+
 
